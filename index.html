@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation Design Agency | Presentation Design Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <!-- link favicon -->
+     <link rel="shortcut icon" href="https://ochi.design/wp-content/themes/ochi/assets/icons/favicon-32x32.png" type="image/x-icon">
+    <!-- link favicon -->
+    <!-- locomotive css cdn start -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+    <!-- locomotive css cdn end -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<style> 
+
+    @font-face {
+        font-family: 'FG';
+        src: url(./assets/FoundersGrotesk-Semibold.woff);
+    }
+
+    @font-face {
+        font-family: 'NM';
+        src: url(./assets/NeueMontreal-Regular.woff);
+    }
+
+    :root{
+        --bg-white: #f1f1f1;
+        --text-black: #2e2e2e;
+        --bg-orange:#e73c37;
+        --text-black-sm: #212121;
+        --dark-green: #004d43;
+        --white-text: #ffffff;
+        --light-green: #cdea68;
+        --btn-bg: #000000;
+        --border-color: #646464;
+        --border-color-2: #b2b2b2;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,body{
+        width: 100%;
+        height: 100%;
+        font-family: 'NM';
+        /* scroll-behavior: smooth; */
+    }
+
+   
+    .menu-close{
+        top: 0;
+    }
+
+    .menu-toggle-after{
+        gap: 0;
+    }
+
+    .menu-toggle-one-after{
+        transform: rotate(45deg);
+        transform-origin: center;
+        background-color: var(--bg-white);
+    }
+
+    .menu-toggle-two-after{
+        transform: rotate(-45deg);
+        transform-origin: center;
+        background-color: var(--bg-white);
+    }
+
+    .logo-after{
+        fill: var(--white-text);
+    }
+    
+
+    
+    body::-webkit-scrollbar{
+        display: none;
+    }
+   
+
+    #marque-con::-webkit-scrollbar-track{
+        display: none;
+    }
+
+   
+   .show{
+        display: flex;
+   }
+    
+</style>
+<body>
+    <!-- nav start -->
+    <nav id="nav" class="fixed top-0 left-0 flex justify-between items-center w-full h-16 md:px-[4vw] px-5 z-50 backdrop-blur-md bg-transparent">
+        <!-- logo start -->
+        <div id="logo" class="logo">
+            <svg width="72" height="30" viewBox="0 0 72 30" class="fill-[var(--btn-bg)]"  xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.8393 10.2032C4.22951 10.3257 -0.0459221 14.7356 0.000372391 20.2752C0.0412204 25.3548 4.57808 30.3608 10.6862 29.9226C15.5145 29.5768 19.9015 25.4119 19.8525 20.0057C19.8035 14.5995 15.1904 10.0916 9.8393 10.2032ZM9.89649 25.7005C6.87101 25.7005 4.39834 23.1144 4.40924 19.9839C4.39525 19.2507 4.52792 18.522 4.79947 17.8407C5.07102 17.1594 5.47597 16.5392 5.99056 16.0164C6.50515 15.4937 7.11902 15.0789 7.79613 14.7966C8.47324 14.5142 9.19995 14.3698 9.93362 14.372C10.6673 14.3742 11.3931 14.5228 12.0686 14.8092C12.744 15.0956 13.3554 15.514 13.8668 16.0398C14.3783 16.5656 14.7796 17.1882 15.0471 17.8711C15.3146 18.554 15.4429 19.2834 15.4246 20.0166C15.4409 23.1008 12.9111 25.7059 9.88832 25.7005H9.89649Z" ></path>
+                <path d="M62.8086 29.4855H67.1222V10.6372H62.8086V29.4855Z"></path>
+                <path d="M67.6816 0.172852V6.13439H71.5322C71.6738 6.13439 71.8046 6.13439 72.0006 6.11534V0.172852H67.6816Z" ></path>
+                <path d="M31.5648 25.7016C28.5393 25.7016 26.0667 23.1156 26.0776 19.9851C26.0936 18.5291 26.6764 17.1366 27.7023 16.1029C28.7282 15.0692 30.1166 14.4757 31.573 14.4482C32.4198 14.4541 33.2537 14.6557 34.0095 15.0373C34.7654 15.4188 35.4227 15.97 35.9301 16.6477L40.0667 15.0144C38.2884 12.0853 35.0669 10.1145 31.4995 10.1989C25.8897 10.3214 21.6142 14.7313 21.6605 20.2709C21.7014 25.3505 26.2382 30.3565 32.3464 29.9183C33.9908 29.7803 35.5761 29.2408 36.9631 28.347C38.3501 27.4532 39.4963 26.2326 40.3009 24.7924L36.2542 22.9931C35.7705 23.8086 35.0851 24.486 34.2638 24.9604C33.4426 25.4347 32.5132 25.69 31.5648 25.7016Z" ></path>
+                <path d="M52.4097 10.1387C51.2512 10.1119 50.1066 10.3947 49.0941 10.958C48.0816 11.5212 47.2379 12.3445 46.6501 13.3427V0.172852H42.293V29.4688H46.6501C46.6501 29.1721 46.6501 18.7816 46.6501 18.7816C46.6501 15.6946 47.8619 13.4352 50.8084 13.4352C54.6046 13.4352 54.6209 17.4178 54.6209 19.6962C54.6209 22.9165 54.6209 25.5189 54.6209 28.7393V29.4987H59.0271C59.0271 29.3708 59.0488 29.2728 59.0488 29.1721C59.0488 25.5108 59.0951 21.8522 59.0325 18.1909C58.9916 15.6538 58.5015 10.1387 52.4097 10.1387Z" ></path>
+            </svg>
+        </div>
+        <!-- logo end -->
+        <!-- nav-toggle start -->
+        <div id="menu-toggle"  class="menu-toggle w-fit h-fit flex flex-col gap-[1.5vw] items-center justify-center md:cursor-pointer md:hidden duration-300" data-component="nav-toggle">
+            <span id="menu-toggle-one" class="w-8 h-[1.6px] bg-[var(--text-black)] rounded-full duration-500"></span>
+            <span id="menu-toggle-two" class="w-8 h-[1.6px] bg-[var(--text-black)] rounded-full duration-500"></span>
+        </div>
+        <!-- nav-toggle end -->
+        <div class="nav-opt w-1/2 h-fit hidden md:block">
+            <ul class="flex gap-[2vw] text-[1.3vw]">
+                <li class="menu-item group w-fit h-[2vw] flex flex-col overflow-hidden duration-500 relative cursor-pointer after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[1.3px] after:bg-[var(--text-black)] after:bottom-0 after:left-0 after:duration-500">
+                    <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Services</h3>
+                    <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Services</h3>
+                </li>
+                <li class="menu-item group w-fit h-[2vw] flex flex-col overflow-hidden duration-500 relative cursor-pointer after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[1.3px] after:bg-[var(--text-black)] after:bottom-0 after:left-0 after:duration-500">
+                    <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Our Work</h3>
+                    <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Our Work</h3>
+                </li>
+                <li class="menu-item group w-fit h-[2vw] flex flex-col overflow-hidden duration-500 relative cursor-pointer after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[1.3px] after:bg-[var(--text-black)] after:bottom-0 after:left-0 after:duration-500">
+                    <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">About us</h3>
+                    <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">About us</h3>
+                </li>
+                <li class="menu-item group w-fit h-[2vw] flex flex-col overflow-hidden duration-500 relative cursor-pointer  after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[1.3px] after:bg-[var(--text-black)] after:bottom-0 after:left-0 after:duration-500">
+                    <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Insights</h3>
+                    <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Insights</h3>
+                </li>
+                <li class="menu-item group w-fit h-[2vw] flex flex-col overflow-hidden duration-500 relative cursor-pointer after:content-[''] after:absolute after:w-0 hover:after:w-full after:h-[1.3px] after:bg-[var(--text-black)] after:bottom-0 after:left-0 after:duration-500 ml-[10vw]">
+                    <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Contact us</h3>
+                    <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Contact us</h3>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- nav end -->
+     <!-- nav menu-container start -->
+    <div id="menu-container" class="menu-container block md:hidden absolute z-20 bg-[var(--text-black-sm)] top-[-100%] left-0 w-full h-full duration-700 text-[var(--white-text)]">
+        <ul class="menu-list uppercase w-full h-fit flex flex-col px-5 mt-[20vh] pt-5 border-t-2 border-t-[var(--border-color)] font-['FG'] text-[16vw] leading-none">
+            <li class="menu-item group w-fit h-[16vw] flex flex-col overflow-hidden duration-500 relative">
+                <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Services</h3>
+                <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Services</h3>
+            </li>
+            <li class="menu-item group w-fit h-[16vw] flex flex-col overflow-hidden duration-500 relative">
+                <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Our Work</h3>
+                <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Our Work</h3>
+            </li>
+            <li class="menu-item group w-fit h-[16vw] flex flex-col overflow-hidden duration-500 relative">
+                <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">About us</h3>
+                <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">About us</h3>
+            </li>
+            <li class="menu-item group w-fit h-[16vw] flex flex-col overflow-hidden duration-500 relative">
+                <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Insights</h3>
+                <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Insights</h3>
+            </li>
+            <li class="menu-item group w-fit h-[16vw] flex flex-col overflow-hidden duration-500 relative ">
+                <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Contact us</h3>
+                <h3 class="menu-item-title group-hover:translate-y-[-100%] duration-500">Contact us</h3>
+            </li>
+        </ul>
+    </div>
+    <!-- menu-container end -->
+
+    <!-- upper-sec start -->
+    <!-- <section id="upper-con" class="upper-sec fixed z-[999] bg-[var(--text-black)] w-full h-screen flex items-center justify-center">
+        
+        <section id="inner-sec" class="mid-sec w-[80%] h-[80%] bg-[var(--bg-white)] rounded-md relative  overflow-hidden">
+            <nav  class=" absolute top-0 left-0 flex justify-between items-center w-full h-16 px-[4vw] md:px-[4vw] z-50">
+                <div id="logo" class="logo">
+                    <svg width="72" height="30" viewBox="0 0 72 30" class="fill-[var(--btn-bg)]"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.8393 10.2032C4.22951 10.3257 -0.0459221 14.7356 0.000372391 20.2752C0.0412204 25.3548 4.57808 30.3608 10.6862 29.9226C15.5145 29.5768 19.9015 25.4119 19.8525 20.0057C19.8035 14.5995 15.1904 10.0916 9.8393 10.2032ZM9.89649 25.7005C6.87101 25.7005 4.39834 23.1144 4.40924 19.9839C4.39525 19.2507 4.52792 18.522 4.79947 17.8407C5.07102 17.1594 5.47597 16.5392 5.99056 16.0164C6.50515 15.4937 7.11902 15.0789 7.79613 14.7966C8.47324 14.5142 9.19995 14.3698 9.93362 14.372C10.6673 14.3742 11.3931 14.5228 12.0686 14.8092C12.744 15.0956 13.3554 15.514 13.8668 16.0398C14.3783 16.5656 14.7796 17.1882 15.0471 17.8711C15.3146 18.554 15.4429 19.2834 15.4246 20.0166C15.4409 23.1008 12.9111 25.7059 9.88832 25.7005H9.89649Z" ></path>
+                        <path d="M62.8086 29.4855H67.1222V10.6372H62.8086V29.4855Z"></path>
+                        <path d="M67.6816 0.172852V6.13439H71.5322C71.6738 6.13439 71.8046 6.13439 72.0006 6.11534V0.172852H67.6816Z" ></path>
+                        <path d="M31.5648 25.7016C28.5393 25.7016 26.0667 23.1156 26.0776 19.9851C26.0936 18.5291 26.6764 17.1366 27.7023 16.1029C28.7282 15.0692 30.1166 14.4757 31.573 14.4482C32.4198 14.4541 33.2537 14.6557 34.0095 15.0373C34.7654 15.4188 35.4227 15.97 35.9301 16.6477L40.0667 15.0144C38.2884 12.0853 35.0669 10.1145 31.4995 10.1989C25.8897 10.3214 21.6142 14.7313 21.6605 20.2709C21.7014 25.3505 26.2382 30.3565 32.3464 29.9183C33.9908 29.7803 35.5761 29.2408 36.9631 28.347C38.3501 27.4532 39.4963 26.2326 40.3009 24.7924L36.2542 22.9931C35.7705 23.8086 35.0851 24.486 34.2638 24.9604C33.4426 25.4347 32.5132 25.69 31.5648 25.7016Z" ></path>
+                        <path d="M52.4097 10.1387C51.2512 10.1119 50.1066 10.3947 49.0941 10.958C48.0816 11.5212 47.2379 12.3445 46.6501 13.3427V0.172852H42.293V29.4688H46.6501C46.6501 29.1721 46.6501 18.7816 46.6501 18.7816C46.6501 15.6946 47.8619 13.4352 50.8084 13.4352C54.6046 13.4352 54.6209 17.4178 54.6209 19.6962C54.6209 22.9165 54.6209 25.5189 54.6209 28.7393V29.4987H59.0271C59.0271 29.3708 59.0488 29.2728 59.0488 29.1721C59.0488 25.5108 59.0951 21.8522 59.0325 18.1909C58.9916 15.6538 58.5015 10.1387 52.4097 10.1387Z" ></path>
+                    </svg>
+                </div>             
+            </nav> 
+            <div class="headline-con font-['FG']  mt-[20vh] md:mt-[24vh] pl-[4vw] md:text-[10vw] md:leading-[7.5vw] text-[16vw] leading-[13vw] flex flex-col w-fit h-fit text-[var(--text-black)] relative">
+                <h2>WE CREATE</h2>
+                <h2>EYE-OPENING</h2>
+                <h2>PRESENTATIONS</h2>
+            </div>
+            <div id="mid-sec-down" class="mid-sec-down absolute top-[80%] left-0 px-[3.5vw] flex justify-between items-center w-full">
+                <p class="md:text-[1.7vw] text-[3vw] mt-8">Loading...</p>
+                <div class="text font-[FG]"><span id="counder" class="md:text-[5.5vw] text-[12vw]">0</span><i class="ri-percent-fill md:text-[3vw] text-[6vw]"></i>
+                </div>
+            </div>
+        </section>
+    </section> -->
+    <!-- upper-sec end -->
+    <!-- app start -->
+    <div id="app">
+        <!-- page1 start -->
+        <section class="page1 w-full h-screen p-1 bg-[#f1f1f1] relative z-10">
+            <div class="headline-con font-['FG'] pl-[4vw] mt-[20vh] md:mt-[24vh] md:text-[10vw] md:leading-[7.5vw] text-[16vw] leading-[13vw] flex flex-col w-fit h-fit text-[var(--text-black)] relative ">
+                <h2>WE CREATE</h2>
+                <h2 id="heading-h2" class="relative z-10 bg-[var(--bg-white)] left-[22%]">EYE-OPENING</h2>
+                <h2>PRESENTATIONS</h2>
+                <div class="heding-img-con absolute top-[52%]  -translate-y-1/2 md:w-[10vw] md:h-[6.5vw] w-[15vw] h-[12vw] rounded overflow-hidden ">
+                    <img src="./assets/heading-img.jpg" class="w-full h-full object-cover" alt="">
+                </div>
+            </div>
+            <div class="absolute md:top-[35%] top-[20%] right-0 side-con bg-[var(--bg-orange)] z-20 text-[var(--bg-white)] ">
+                <svg width="53.08" height="171.358">
+					<path class="js-color-bg" fill="#E73C37" d="M0 0h53.08v171.358H0z"></path>
+					<g class="js-color-text" fill="#fff">
+						<path d="M30.016 151.575a3.599 3.599 0 0 1-2.484 1.878l-.965-1.535c.623-.155 1.126-.401 1.506-.737.38-.337.57-.768.57-1.293 0-.4-.101-.722-.301-.966-.199-.242-.504-.365-.912-.365-.254 0-.478.083-.674.249a2.423 2.423 0 0 0-.511.62c-.146.249-.331.603-.556 1.061l-.204.424c-.293.584-.66 1.052-1.104 1.403-.443.351-1.011.525-1.703.525-.516 0-.983-.119-1.402-.357-.42-.239-.748-.575-.986-1.009s-.357-.929-.357-1.483c0-1.413.619-2.378 1.855-2.895l.979 1.535c-.721.253-1.082.706-1.082 1.359 0 .282.09.526.271.73.182.205.402.308.665.308s.495-.091.694-.271a2.51 2.51 0 0 0 .512-.657c.141-.258.324-.631.548-1.118.224-.478.454-.879.687-1.206a2.76 2.76 0 0 1 .914-.803c.375-.211.83-.315 1.367-.315.613 0 1.152.139 1.614.417.463.278.819.665 1.067 1.162s.373 1.062.373 1.695a3.545 3.545 0 0 1-.381 1.644M21.627 145.02a1.13 1.13 0 0 1-.833.336c-.332 0-.61-.111-.834-.336s-.336-.502-.336-.833c0-.332.112-.608.336-.833s.502-.337.834-.337c.331 0 .608.112.833.337s.336.501.336.833c0 .331-.111.608-.336.833m1.285-1.74h7.367v1.812h-7.367v-1.812zM29.709 140.226c-.458.479-1.135.716-2.031.716h-3.216v1.141h-1.55v-1.141H21.07l-1.139-1.812h2.98v-1.945h1.55v1.945h3.187c.438 0 .748-.081.928-.242.181-.16.27-.402.27-.723 0-.244-.057-.479-.175-.702l1.462-.424c.176.38.264.779.264 1.198-.001.849-.23 1.511-.688 1.989M29.833 134.72a3.333 3.333 0 0 1-1.433 1.169c-.579.249-1.182.373-1.805.373s-1.225-.124-1.805-.373a3.347 3.347 0 0 1-1.434-1.169c-.375-.531-.563-1.196-.563-1.995 0-.77.184-1.413.549-1.93a3.282 3.282 0 0 1 1.381-1.14 4.239 4.239 0 0 1 1.711-.365h.746v5.072a1.796 1.796 0 0 0 1.168-.49c.332-.307.496-.724.496-1.249 0-.41-.092-.753-.277-1.031-.185-.277-.473-.528-.862-.753l.542-1.462c.691.303 1.223.724 1.592 1.265.371.541.557 1.235.557 2.083 0 .798-.188 1.463-.563 1.995m-4.085-3.574c-.41.088-.746.261-1.009.519s-.394.611-.394 1.06c0 .429.135.784.408 1.067s.604.458.994.526v-3.172zM29.898 122.64c-.33.565-.783.996-1.359 1.294-.574.297-1.221.445-1.943.445-.721 0-1.369-.148-1.943-.445-.576-.298-1.029-.729-1.36-1.294s-.496-1.232-.496-2.002c0-.771.165-1.438.496-2.003a3.301 3.301 0 0 1 1.36-1.293c.574-.298 1.223-.446 1.943-.446.723 0 1.369.148 1.943.446a3.293 3.293 0 0 1 1.359 1.293c.332.564.497 1.232.497 2.003.001.769-.165 1.436-.497 2.002m-1.703-3.347c-.433-.331-.967-.497-1.6-.497s-1.167.166-1.602.497c-.433.33-.649.778-.649 1.345 0 .564.217 1.013.649 1.344.435.332.969.498 1.602.498s1.167-.166 1.6-.498c.435-.331.65-.779.65-1.344.001-.567-.215-1.015-.65-1.345M24.462 115.16v.936h-1.55v-.936h-.381c-.866 0-1.516-.227-1.95-.68-.433-.453-.649-1.074-.649-1.863 0-.556.096-1.014.291-1.374l1.463.396a2.238 2.238 0 0 0-.205.876c0 .556.307.834.92.834h.512v-1.55h1.55v1.55h5.817v1.812h-5.818zM29.709 105.543c-.458.479-1.135.717-2.031.717h-3.216v1.14h-1.55v-1.14H21.07l-1.139-1.813h2.98v-1.944h1.55v1.944h3.187c.438 0 .748-.081.928-.241.181-.16.27-.402.27-.724 0-.244-.057-.478-.175-.702l1.462-.424c.176.38.264.78.264 1.199-.001.848-.23 1.51-.688 1.988M19.931 101.104v-1.812h4.166a2.805 2.805 0 0 1-.942-.973 2.622 2.622 0 0 1-.358-1.367c0-.711.188-1.271.562-1.681.376-.409.93-.614 1.66-.614h5.262v1.813H25.66c-.449 0-.779.09-.994.27-.215.181-.321.455-.321.826 0 .292.103.57.308.833.204.263.516.478.936.644.418.166.945.249 1.578.249h3.113v1.812H19.931zM29.833 91.469a3.333 3.333 0 0 1-1.433 1.169 4.545 4.545 0 0 1-3.61 0 3.345 3.345 0 0 1-1.433-1.169c-.375-.532-.563-1.197-.563-1.995 0-.771.184-1.413.549-1.93a3.284 3.284 0 0 1 1.381-1.141 4.239 4.239 0 0 1 1.711-.365h.746v5.072c.446-.02.838-.183 1.168-.49.332-.307.496-.724.496-1.249 0-.409-.092-.753-.277-1.03-.185-.278-.473-.529-.862-.753l.542-1.462c.691.302 1.223.724 1.592 1.265.371.541.557 1.234.557 2.083-.001.797-.189 1.463-.564 1.995m-4.085-3.574c-.41.088-.746.261-1.009.519-.263.259-.394.611-.394 1.061 0 .428.135.784.408 1.066s.604.458.994.526v-3.172zM20.047 80.572V77.37c0-.847.187-1.631.557-2.353.369-.721.938-1.303 1.703-1.746.764-.444 1.717-.665 2.857-.665 1.139 0 2.092.221 2.857.665.764.443 1.332 1.025 1.701 1.746.371.722.557 1.506.557 2.353v3.202H20.047zm8.478-2.601c0-.975-.251-1.791-.753-2.448-.501-.658-1.372-.987-2.608-.987-1.238 0-2.107.329-2.609.987-.502.657-.754 1.474-.754 2.448v.701h6.725v-.701zM29.812 70.685c-.39.419-.94.628-1.651.628-.731 0-1.315-.277-1.754-.833s-.658-1.306-.658-2.251v-1.286h-.321c-.36 0-.631.122-.812.365s-.271.551-.271.921c0 .633.282 1.059.849 1.271l-.352 1.535a2.326 2.326 0 0 1-1.484-.943c-.374-.512-.562-1.133-.562-1.863 0-.984.261-1.747.782-2.288.521-.54 1.289-.812 2.302-.812h4.399v1.492l-.936.19c.702.573 1.052 1.33 1.052 2.265.001.653-.194 1.19-.583 1.609m-1.382-3.246c-.277-.332-.645-.497-1.104-.497h-.146v1.213c0 .4.078.709.233.929.156.219.395.328.717.328a.655.655 0 0 0 .519-.227c.132-.151.197-.348.197-.592a1.742 1.742 0 0 0-.416-1.154M29.812 61.639l-6.9 2.674v-1.827l4.619-1.711-4.619-1.607v-1.813l10.349 3.801v1.754zM35.481 17.006l-4.782 14.969h-3.266l-2.584-9.682-2.584 9.682h-3.267l-4.783-14.969h3.713l2.674 10.275 2.525-10.275h3.444l2.525 10.275 2.674-10.275zM37.979 27.163c1.426 0 2.496 1.069 2.496 2.495 0 1.425-1.07 2.495-2.496 2.495s-2.494-1.07-2.494-2.495c-.001-1.426 1.068-2.495 2.494-2.495"></path>
+					</g>
+				</svg>
+            </div>
+            <div class="page1-lower-sec w-full block md:flex items-center justify-between border-[#b2b2b2] broder-t-[1vw] md:border-t-[1.3px] mt-[17.5vh] px-[4vw] py-[1vw] ">
+                <div class="md:flex flex-col md:gap-0 md:h-fit md:flex-row md:w-[60%] w-full md:items-center md:justify-between md:text-[1.2vw] text-[5vw]">
+                    <p>For public and private companies</p>
+                    <p class="mt-[5vw] md:mt-0">From the first pitch to IPO</p>
+                </div>
+                <button class="group flex items-center justify-center gap-2 cursor-pointer md:mt-0 mt-[4vw]">
+                    <div class="border-[#212121] md:border-[1.3px] border-[1.7px] rounded-full md:px-3 px-4 md:py-1 py-2 uppercase group-hover:bg-[#212121] group-hover:text-[var(--bg-white)] duration-300 md:text-[1vw] text-[4vw]">
+                        Start the project
+                    </div>
+                    <div class="hidden md:block border-[#212121] px-1 border-[1.3px] rounded-full  after:[''] after:w-full after:h-full after:absolute relative after:bg-[#212121] after:rounded-full after:top-0 after:left-0 after:scale-0 group-hover:after:scale-100 after:duration-300">
+                        <i class="ri-arrow-right-up-line relative z-10 text-[#212121] group-hover:text-[var(--bg-white)] "></i>
+                    </div>
+                </button>
+            </div>
+        </section>
+        <!-- page1 end -->
+
+        <!-- page2 start -->
+        <section id="marque-con" class="w-full h-fit bg-[#004d43]  rounded-[1rem] font-[FG] text-[#ffffff] uppercase md:text-[26vw] text-[40vw] leading-[35vw] md:leading-[25vw] md:py-8 py-12 relative z-10">
+            <div id="marque-con " class="w-full h-full flex items-center overflow-x-hidden overflow-y-hidden relative ">
+                <div class="m-con md:w-[100vw] w-[150vw] h-fit shrink-0 flex items-center justify-center ">We are ochi</div>
+                <div class="m-con md:w-[100vw] w-[150vw] h-fit shrink-0 flex items-center justify-center  ">We are ochi</div>
+                <div class="m-con md:w-[100vw] w-[150vw] h-fit shrink-0 flex items-center justify-center " >We are ochi</div>
+
+                <div class="upper-line w-full h-[2.5px] bg-[#4d837c] absolute md:top-[18%] top-[10%] left-0"></div>
+                <div class="upper-line w-full h-[2.5px] bg-[#4d837c] absolute md:bottom-[6%] bottom-0 left-0"></div>
+            </div>
+        </section>
+        <!-- page2 end -->
+
+       <div id="below-sec" class="w-full h-full ">
+        <!-- page3 start -->
+        <section id="about-con" class="sec3 w-full min-h-screen bg-[#cdea68] text-[#212121] rounded-t-[1rem] relative z-10 rounded-[1rem]">
+            <!-- sec3-1con start -->
+            <div class="sec3-1con md:text-[4.5vw] text-[9vw] md:leading-[4.5vw] leading-[9vw] md:px-[4vw] px-[6vw] md:pt-[7vw] py-[12vh] md:pb-[5vw] ">
+                <p>Ochi is a strategic presentation agency for forward-
+                    thinking businesses that need to <u> raise funds, sell
+                    products, explain complex ideas </u>, and <u>hire great people</u>.
+                </p>
+            </div>  
+            <!-- sec3-1con end -->
+
+            <!-- sec3-2con start -->
+            <div class="border-[#99ad53] border-t-[1px] border-b-[1px] w-full h-fit md:h-[60vh] md:px-[4vw] px-[6vw] md:py-2 py-6 flex flex-col gap-5 md:grid grid-cols-4 gap-4 md:text-[1.3vw] text-[4vw] ">
+                <div class="col-start-1  col-span-2 ">What you can expect:</div>
+                <div class="col-start-3  col-span-1 pb-[8vw] flex flex-col items-start justify-between md:gap-0 gap-4">
+                    <p>We create tailored presentations to help
+                        you persuade your colleagues, clients, or
+                        investors. Whether it's live or digital,
+                        delivered for one or a hundred people.
+                    </p>
+                    <p>We believe the mix of strategy and
+                        design (with a bit of coffee) is what
+                        makes your message clear, convincing,
+                        and captivating.
+                    </p>
+                </div>
+                <div class="col-start-4  col-span-1 md:flex items-center md:px-[6vw] px-0">
+                    <ul class="cursor-pointer">
+                        <li class="mb-5 cursor-default">S:</li>
+                        <li class="underline">Instagram</li>
+                        <li class="underline">Behance</li>
+                        <li class="underline">Facebook</li>
+                        <li class="underline">Linkedin</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- sec3-2con end -->
+
+            <!-- sec3-3con start -->
+            <div class="w-full md:h-[80vh] h-fit md:px-[4vw] px-[6vw] md:py-[1vw] py-[3vw] flex md:flex-row flex-col justify-between ">
+                <div>
+                    <h2 class="md:text-[4.5vw] text-[10vw]">Our approach:</h2>
+                    <button class="group md:mt-4 mt-3 uppercase flex items-center justify-center bg-[#2e2e2e] group-hover:bg-[#000000]  text-[#ffffff] md:w-[13vw] w-[40vw] md:h-[4.5vw] h-[15vw] rounded-full md:text-[1.1vw] text-[3.5vw] relative">
+                        <div class="absolute top-1/2 -translate-y-1/2 left-[15%]">Readmore</div>
+                        <div class="bg-[#f1f1f1] w-2 group-hover: h-2  scale-100 group-hover:scale-[5] rounded-full duration-300 absolute top-1/2 -translate-y-1/2 right-[15%] flex items-center justify-center">
+                            <i class="ri-arrow-right-up-line md:text-[.7vw] text-[2vw] scale-0 text-[#212121] group-hover:scale-50 duration-200"></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="md:w-1/2 w-full md:h-full h-[50vh] md:mt-0 mt-7 overflow-hidden rounded-md">
+                    <img src="./assets/ouraproch.jpg" class="w-full h-full object-cover" alt="">
+                </div>
+            </div>
+            <!-- sec3-3con end -->
+        </section>
+        <!-- page3 end -->
+
+        <!-- empty-sec -->
+        <section id="empty-con" class="w-full md:h-screen  h-[50vh]  flex items-center justify-center relative z-10 md:bg-transparent bg-[url(./assets/eye-con.jpg)] bg- bg-cover bg-center ">
+            <div class="eye-con  w-fit md:h-[38vh] h-[20vh] md:gap-10 gap-5 flex items-center justify-between">
+                <div class="eye-outer md:w-[18vw] w-[27vw] h-full bg-[#ffffff] rounded-full relative">
+                    <h2 class="uppercase top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute z-20 text-[#f1f1f1]">Play</h2>
+                    <div id="pupil1" class="eye-black bg-[#212121] w-[60%]  h-[60%]  rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute">
+                        <div id="line1" class="line w-full md:h-[20%] h-[40%]  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center">
+                            <div  class="sm-eye-white md:w-[1.5vw] w-[2vw] md:h-[1.5vw] h-[2vw] bg-[#f1f1f1] rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="eye-outer md:w-[18vw] w-[27vw] h-full bg-[#ffffff] rounded-full relative">
+                    <h2 class="uppercase top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute z-20 text-[#f1f1f1]">Play</h2>
+                    <div id="pupil1" class="eye-black bg-[#212121] w-[60%]  h-[60%]  rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute">
+                        <div id="line2" class="line w-full md:h-[20%] h-[40%]  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center">
+                            <div  class="sm-eye-white md:w-[1.5vw] w-[2vw] md:h-[1.5vw] h-[2vw] bg-[#f1f1f1] rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="vedio-Con" class="vedio-Con md:hidden w-full h-full absolute z-30 hidden">
+                <video src="./assets/Main-HQ-1.mp4" class="w-full h-full object-cover" muted loop></video>
+            </div>
+        </section> 
+        <!-- empty-sec -->
+
+        <!-- page4 eye-sec start -->
+        <section class="page4 w-full h-screen fixed top-0 left-0 hidden md:flex">
+            <img src="./assets/eye-con.jpg" class="w-full h-full md:object-cover object-contain" alt="">  
+        </section>
+        <!-- page4 eye-sec end -->
+
+
+        <!-- page5 start features -->
+        <section id="fetures-con" class="page5 w-full min-h-screen relative z-10 bg-[var(--bg-white)] rounded-[1rem]">
+            <h2 class="md:text-[4vw] text-[8vw] px-[4vw]  md:py-[4vw] py-[6vw] md:pt-[6vw] pt-[14vw] border-b-[1.3px] border-[#b2b2b2]">Featured projects</h2>
+
+            <!-- features-con start -->
+            <div class="w-full h-fit px-[4vw] ">
+                <!-- list-con1 start-->
+                <div class="w-full md:h-[95vh] h-fit flex justify-between items-center gap-6 relative mt-[10vh] flex-col md:flex-row">
+                    <!-- first card-featured -->
+                    <div class="fetured-card md:w-1/2 w-full md:h-full h-1/2 flex flex-col gap-3 ">
+                        <h4 class="flex items-center justify-left gap-2 md:text-[1.2vw] text-[4vw] uppercase"><span class="md:w-[.8vw] md:h-[.8vw] w-[3vw] h-[3vw] bg-black rounded-full inline-block"></span>CARDBOARD SPACESHIP</h4>
+
+                        <div class="group img-con w-full h-[85%] cursor-pointer">
+                            <img src="./assets/card1.png" class="w-full h-full object-cover hover:scale-[.9] duration-200 rounded-[.8rem] " alt="">
+                             <!-- hover item -->
+                            <div class="w-[100%] h-fit absolute top-[40%] left-[0%] md:flex items-center justify-center z-10 overflow-hidden hidden">
+                                <h3 class="hoverh3 text-[10vw] leading-[8vw]  text-[#cdea68] font-[FG] scale-0 group-hover:scale-100 duration-300 uppercase">CARDBOARD SPACESHIP</h3>
+                            </div>
+                        </div>
+
+                        <div class="btn-con flex flex-wrap gap-3">   
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300 ">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">branded tamplate</h2>
+                            </div> 
+
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">Sales desk</h2>
+                            </div>
+                            
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">Social media template</h2>
+                            </div> 
+                        </div>
+                       
+                    </div>
+                    
+                    <!-- second card-featured -->
+                    <div class="fetured-card md:w-1/2 w-full md:h-full h-1/2 flex flex-col gap-3 ">
+                        <h4 class="flex items-center justify-left gap-2 md:text-[1.2vw] text-[4vw] uppercase"><span class="md:w-[.8vw] md:h-[.8vw] w-[3vw] h-[3vw] bg-black rounded-full inline-block"></span>AH2 & MATT HORN</h4>
+
+                        <div class="group img-con w-full h-[85%] cursor-pointer">
+                            <img src="./assets/card2.png" class="w-full h-full object-cover hover:scale-[.9] duration-200 rounded-[.8rem] " alt="">
+                             <!-- hover item -->
+                            <div class="w-[100%] h-fit absolute top-[40%] left-[0%] md:flex hidden items-center justify-center z-10 overflow-hidden ">
+                                <h3 class="hoverh3 text-[10vw] leading-[8vw]  text-[#cdea68] font-[FG] scale-0 group-hover:scale-100 duration-300 uppercase">AH2 & MATT HORN</h3>
+                            </div>
+                        </div>
+
+                        <div class="btn-con flex flex-wrap gap-3">   
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300 ">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">PITCH DECK</h2>
+                            </div> 
+
+                            
+                        </div>
+                       
+                    </div>
+                </div> 
+                <!-- list-con1 end -->
+
+                 <!-- list-con2 start-->
+                 <div class="w-full md:h-[95vh] h-fit flex justify-between items-center gap-6 relative mt-[10vh] flex-col md:flex-row">
+                    <!-- first card-featured -->
+                    <div class="fetured-card md:w-1/2 w-full md:h-full h-1/2 flex flex-col gap-3 ">
+                        <h4 class="flex items-center justify-left gap-2 md:text-[1.2vw] text-[4vw] uppercase"><span class="md:w-[.8vw] md:h-[.8vw] w-[3vw] h-[3vw] bg-black rounded-full inline-block"></span>FYDE</h4>
+
+                        <div class="group img-con w-full h-[85%] cursor-pointer">
+                            <img src="./assets/card3.png" class="w-full h-full object-cover hover:scale-[.9] duration-200 rounded-[.8rem] " alt="">
+                             <!-- hover item -->
+                            <div class="w-[100%] h-fit absolute top-[40%] left-[0%] md:flex items-center justify-center z-10 overflow-hidden hidden">
+                                <h3 class="hoverh3 text-[10vw] leading-[8vw]  text-[#cdea68] font-[FG] scale-0 group-hover:scale-100 duration-300 uppercase">FYDE</h3>
+                            </div>
+                        </div>
+
+                        <div class="btn-con flex flex-wrap gap-3">   
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300 ">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">AUDIT</h2>
+                            </div> 
+
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">COPYWRITING</h2>
+                            </div>
+                            
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">SALES DECK</h2>
+                            </div> 
+
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">SLIDES DESIGN</h2>
+                            </div> 
+                        </div>
+                       
+                    </div>
+                    
+                    <!-- second card-featured -->
+                    <div class="fetured-card md:w-1/2 w-full md:h-full h-1/2 flex flex-col gap-3 ">
+                        <h4 class="flex items-center justify-left gap-2 md:text-[1.2vw] text-[4vw] uppercase"><span class="md:w-[.8vw] md:h-[.8vw] w-[3vw] h-[3vw] bg-black rounded-full inline-block"></span>VISE</h4>
+
+                        <div class="group img-con w-full h-[85%] cursor-pointer">
+                            <img src="./assets/card4.jpg" class="w-full h-full object-cover hover:scale-[.9] duration-200 rounded-[.8rem] " alt="">
+                             <!-- hover item -->
+                            <div class="w-[100%] h-fit absolute top-[40%] left-[0%] md:flex hidden items-center justify-center z-10 overflow-hidden ">
+                                <h3 class="hoverh3 text-[10vw] leading-[8vw]  text-[#cdea68] font-[FG] scale-0 group-hover:scale-100 duration-300 uppercase">VISE</h3>
+                            </div>
+                        </div>
+
+                        <div class="btn-con flex flex-wrap gap-3">   
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300 ">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">AGENCY</h2>
+                            </div> 
+
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300 ">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">COMPANY PRESENTATION</h2>
+                            </div> 
+
+                            
+                        </div>
+                       
+                    </div>
+                </div> 
+                <!-- list-con2 end -->
+
+                 <!-- list-con3 start-->
+                 <div class="w-full md:h-[95vh] h-fit flex justify-between items-center gap-6 relative mt-[10vh] flex-col md:flex-row">
+                    <!-- first card-featured -->
+                    <div class="fetured-card md:w-1/2 w-full md:h-full h-1/2 flex flex-col gap-3 ">
+                        <h4 class="flex items-center justify-left gap-2 md:text-[1.2vw] text-[4vw] uppercase"><span class="md:w-[.8vw] md:h-[.8vw] w-[3vw] h-[3vw] bg-black rounded-full inline-block"></span>TRAWA</h4>
+
+                        <div class="group img-con w-full h-[85%] cursor-pointer">
+                            <img src="./assets/card5.jpg" class="w-full h-full object-cover hover:scale-[.9] duration-200 rounded-[.8rem] " alt="">
+                             <!-- hover item -->
+                            <div class="w-[100%] h-fit absolute top-[40%] left-[0%] md:flex items-center justify-center z-10 overflow-hidden hidden">
+                                <h3 class="hoverh3 text-[10vw] leading-[8vw]  text-[#cdea68] font-[FG] scale-0 group-hover:scale-100 duration-300 uppercase">TRAWA</h3>
+                            </div>
+                        </div>
+
+                        <div class="btn-con flex flex-wrap gap-3">   
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300 ">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">BRAND IDENTITY</h2>
+                            </div> 
+
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">DESIGN RESEARCH</h2>
+                            </div>
+                            
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">INVESTOR DECK</h2>
+                            </div> 
+                        </div>
+                       
+                    </div>
+                    
+                    <!-- second card-featured -->
+                    <div class="fetured-card md:w-1/2 w-full md:h-full h-1/2 flex flex-col gap-3 ">
+                        <h4 class="flex items-center justify-left gap-2 md:text-[1.2vw] text-[4vw] uppercase"><span class="md:w-[.8vw] md:h-[.8vw] w-[3vw] h-[3vw] bg-black rounded-full inline-block"></span>PREMIUM BLEND</h4>
+
+                        <div class="group img-con w-full h-[85%] cursor-pointer">
+                            <img src="./assets/card6.png" class="w-full h-full object-cover hover:scale-[.9] duration-200 rounded-[.8rem] " alt="">
+                             <!-- hover item -->
+                            <div class="w-[100%] h-fit absolute top-[40%] left-[0%] md:flex hidden items-center justify-center z-10 overflow-hidden ">
+                                <h3 class="hoverh3 text-[10vw] leading-[8vw]  text-[#cdea68] font-[FG] scale-0 group-hover:scale-100 duration-300 uppercase">PREMIUM BLEND</h3>
+                            </div>
+                        </div>
+
+                        <div class="btn-con flex flex-wrap gap-3">   
+                            <div class="group md:border-[1.2px] border-[1.8px] border-[#212121] rounded-full px-3 py-1  cursor-pointer relative after:[''] after:absolute after:rounded-full after:w-full after:h-full after:bg-[#212121] after:top-[100%] after:left-0 overflow-hidden hover:after:rounded-none hover:after:top-0 after:duration-300 ">
+                                <h2 class="uppercase md:text-[1.1vw] text-[4vw] group-hover:text-[#f1f1f1] relative z-10">BRANDED TEMPLATE</h2>
+                            </div> 
+
+                            
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- list-con3 end -->
+            </div>
+            <!-- features-con end -->
+            <!-- featured btn start -->
+            <div class="w-full md:h-[20vw] h-[50vw] flex items-center justify-center md:mt-0 mt-[8vw]">
+                <button class="group  uppercase flex items-center justify-center bg-[#2e2e2e]  text-[#f1f1f1] md:w-[20vw] w-[60vw] md:h-[4.5vw] h-[15vw] rounded-full md:text-[1.1vw] text-[3.5vw] relative after:[''] after:absolute after:w-full after:h-full after:rounded-full after:bg-[#212121] after:top-[100%] after:left-0 hover:after:top-0 after:duration-300 group-hover:after:rounded-none overflow-hidden">
+                    <div class="absolute top-1/2 -translate-y-1/2 left-[10%] group-hover:text-[#ffffff] z-10">
+                        VIEW All CASE STUDIES
+                    </div>
+                    <div class="bg-[#f1f1f1] w-2 group-hover: h-2  scale-100 group-hover:scale-[5] rounded-full duration-300 absolute top-1/2 -translate-y-1/2 right-[10%] flex items-center justify-center z-10">
+                        <i class="ri-arrow-right-up-line md:text-[.7vw] text-[2vw] scale-0 text-[#212121] group-hover:scale-50 duration-200"></i>
+                    </div>
+                </button>
+            </div>
+            <!-- featured btn end -->
+        </section>
+        <!-- page5 end features -->
+
+
+        <!-- page6 start client's review -->
+        <section id="client-con" class="page6 w-full min-h-screen relative z-10 bg-[var(--bg-white)]">
+            <h2 class="px-[4vw] md:text-[6vw] text-[10vw]">Clients' reviews</h2>
+            
+            <div class="clients-con w-full h-fit mt-8 cursor-pointer"  >
+                <div class="client w-full h-[10vh] border-t-[#b2b2b2] border-t-[1px] flex justify-between items-center px-[4vw] py-[1vw] md:text-[1.2vw] text-[4vw] relative z-[15] bg-transparent" data-image = 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+                    <u>Planety</u>
+                    <h5>Nina Walloch</h3>
+                    <p class="uppercase underline">Read</p>
+                </div>
+                <div class="client w-full h-[10vh] border-t-[#b2b2b2] border-t-[1px] flex justify-between items-center px-[4vw] py-[1vw] md:text-[1.2vw] text-[4vw] relative z-[15] bg-transparent" data-image = 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+                    <u>Planety</u>
+                    <h5>Nina Walloch</h3>
+                    <p class="uppercase underline">Read</p>
+                </div>
+                <div class="client w-full h-[10vh] border-t-[#b2b2b2] border-t-[1px] flex justify-between items-center px-[4vw] py-[1vw] md:text-[1.2vw] text-[4vw] relative z-[15] bg-transparent" data-image = 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+                    <u>Planety</u>
+                    <h5>Nina Walloch</h3>
+                    <p class="uppercase underline">Read</p>
+                </div>
+                <div class="client w-full h-[10vh] border-t-[#b2b2b2] border-t-[1px] flex justify-between items-center px-[4vw] py-[1vw] md:text-[1.2vw] text-[4vw] relative z-[15] bg-transparent" data-image = 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+                    <u>Planety</u>
+                    <h5>Nina Walloch</h3>
+                    <p class="uppercase underline">Read</p>
+                </div>
+                <div class="client w-full h-[10vh] border-t-[#b2b2b2] border-t-[1px] flex justify-between items-center px-[4vw] py-[1vw] md:text-[1.2vw] text-[4vw] relative z-[15] bg-transparent" data-image = 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+                    <u>Planety</u>
+                    <h5>Nina Walloch</h3>
+                    <p class="uppercase underline">Read</p>
+                </div>
+                <div class="client w-full h-[10vh] border-t-[#b2b2b2] border-t-[1px] flex justify-between items-center px-[4vw] py-[1vw] md:text-[1.2vw] text-[4vw] relative z-[15] bg-transparent" data-image = 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+                    <u>Planety</u>
+                    <h5>Nina Walloch</h3>
+                    <p class="uppercase underline">Read</p>
+                </div>
+                
+                <div class="client w-full h-[10vh] border-t-[#b2b2b2] border-b-[#b2b2b2] border-b-[1px] border-t-[1px] flex justify-between items-center px-[4vw] py-[1vw] md:text-[1.2vw] text-[4vw] relative z-[15] bg-transparent" data-image = 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+                    <u>Planety</u>
+                    <h5>Nina Walloch</h3>
+                    <p class="uppercase underline">Read</p>
+                </div>
+            </div>
+        </section>
+        <!-- page6 end client's review -->
+
+
+        <!-- page7 cards containers start -->
+        <section id="card-con" class="page7 w-full md:h-[70vh] min-h-screen md:sticky bg-[var(--bg-white)] top-0">
+            <div class="cards w-full h-full grid md:grid-cols-4  grid-rows-9 px-[4vw] py-[2vw] gap-4">
+                <div class="md:grid-cols-1 md:col-span-2 grid-rows-1 row-span-3  md:row-span-6 bg-[#004d43] rounded-lg relative flex items-center justify-center ">
+                    <img src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg" class="w-[130px] object-cover"  alt="">
+                    <div class="btns border-[1px] border-[#bfdf66] absolute bottom-4 left-6 text-[#bfdf66] px-2 py-1 rounded-full">
+                        ©️2019 - 2022
+                    </div>
+                </div>
+                <div class="md:grid-cols-1 md:col-span-1 grid-rows-4 row-span-3 md:row-span-6 bg-[#212121] rounded-lg relative flex items-center justify-between flex-col pt-[10vw] pb-4">
+                    <img src="https://ochi.design/wp-content/uploads/2022/04/logo002.svg" class="w-[130px] object-cover"  alt="">
+                    <div class="hover-btns border-[1px] border-[#b7b7b7] relative  text-[#b7b7b7] md:text-[1vw] text-[3vw] px-2 py-1 rounded-full uppercase cursor-pointer after:[''] after:absolute after:w-full after:h-full after:bg-[var(--bg-white)] after:rounded-full after:left-0 after:top-[100%] overflow-hidden hover:after:top-0 hover:after:rounded-none after:duration-300 hover:text-[#212121] flex items-center justify-center">
+                        <a href="#" class="relative z-20">RATING 5.0 ON CLUTCH</a>
+                    </div>
+                </div>
+                <div class="md:grid-cols-1 md:col-span-1 grid-rows-6 row-span-3  md:row-span-6 bg-[#212121] rounded-lg relative flex items-center justify-between flex-col pt-[8vw] pb-4">
+                    <img src="https://ochi.design/wp-content/uploads/2022/04/logo003.png" class="w-[130px] object-cover"  alt="">
+                    <div class="hover-btns border-[1px] border-[#b7b7b7] relative  text-[#b7b7b7] md:text-[1vw] text-[3vw] px-2 py-1 rounded-full uppercase cursor-pointer after:[''] after:absolute after:w-full after:h-full after:bg-[var(--bg-white)] after:rounded-full after:left-0 after:top-[100%] overflow-hidden hover:after:top-0 hover:after:rounded-none after:duration-300 hover:text-[#212121] flex items-center justify-center md:mt-0 mt-[8vh]">
+                        <a href="#" class="relative z-20 text-center">business bootcamp <br> alumeni</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- page7 cards containers end -->
+
+        
+
+        <!-- page8 start -->
+        <section class="page8 w-full min-h-screen sticky top-[-80%] flex items-center rounded-t-[1rem] justify-center bg-[#cdea68] py-[5vw] text-[#212121]">
+            <div class="w-full h-fit top-0 left-0 text-center relative">
+                <h4 class="uppercase md:text-[20vw]  md:leading-[16vw] text-[28vw] leading-[22vw] font-[FG] relative">Ready <br>           
+                to start  <br> the project ?</h4>
+                
+                <div class="w-full md:h-[8vw] h-[22vw] flex items-center justify-center ">
+                    <button class="group  uppercase flex items-center justify-center bg-[#2e2e2e]  text-[#f1f1f1] md:w-[20vw] w-[60vw] md:h-[4.5vw] h-[15vw] rounded-full md:text-[1.1vw] text-[3.5vw] relative after:[''] after:absolute after:w-full after:h-full after:rounded-full after:bg-[#212121] after:top-[100%] after:left-0 hover:after:top-0 after:duration-300 group-hover:after:rounded-none overflow-hidden">
+                        <div class="absolute top-1/2 -translate-y-1/2 left-[10%] group-hover:text-[#ffffff] z-10">
+                            Start the project
+                        </div>
+                        <div class="bg-[#f1f1f1] w-2 group-hover: h-2  scale-100 group-hover:scale-[5] rounded-full duration-300 absolute top-1/2 -translate-y-1/2 right-[10%] flex items-center justify-center z-10">
+                            <i class="ri-arrow-right-up-line md:text-[.7vw] text-[2vw] scale-0 text-[#212121] group-hover:scale-50 duration-200"></i>
+                        </div>
+                    </button>
+                </div>
+                <h4>OR</h4>
+                <div class="w-full md:h-[8vw] h-[22vw] flex items-center justify-center">
+                    <button class="group  uppercase flex items-center justify-center text-[#2e2e2e] border-[#2e2e2e] border-[1.3px]  md:w-[20vw] w-[60vw] md:h-[4.5vw] h-[15vw] rounded-full md:text-[1.1vw] text-[3.5vw] relative after:[''] after:absolute after:w-full after:h-full after:rounded-full after:bg-[#212121] after:top-[100%] after:left-0 hover:after:top-0 after:duration-300 group-hover:after:rounded-none overflow-hidden">
+                        <div class="absolute top-1/2 -translate-y-1/2 left-[10%] group-hover:text-[#ffffff] z-10">
+                            Hello@ochi.design
+                        </div>
+                        <div class="bg-[#2e2e2e] group-hover:bg-[#ffffff] w-2 group-hover: h-2  scale-100 group-hover:scale-[5] rounded-full duration-300 absolute top-1/2 -translate-y-1/2 right-[10%] flex items-center justify-center z-10">
+                            <i class="ri-arrow-right-up-line md:text-[.7vw] text-[2vw] scale-0 text-[#212121] group-hover:scale-50 duration-200"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- page8 end -->
+
+
+        <!-- footer start -->
+        <footer class="page9 w-full min-h-screen bg-[#f1f1f1] sticky top-[-20%]  text-[#212121] px-[4vw] py-[2vw] pt-[6vw] rounded-t-[1rem]">
+            <div class="w-full h-fit md:grid grid-cols-4 mt-[20vw] md:mt-0">
+                <div class="col-start-1 col-span-2 ">
+                    <h2 class="md:text-[10vw] md:leading-[7.5vw] text-[20vw] leading-[15vw] uppercase font-[FG]">Eye-<br> opening</h2>
+                </div>
+                <div class="col-start-3 col-span-2 ">
+                    <h2 class="md:text-[10vw] md:leading-[7.5vw] text-[20vw] leading-[15vw] uppercase font-[FG]">Presentaions</h2>
+    
+                    <ul class="md:text-[1.2vw] text-[4vw] mt-[7vh] ">
+                        <li class="mb-[2vw] no-underline">S:</li>
+                        <li class="underline">Instagram</li>
+                        <li class="underline">Behance</li>
+                        <li class="underline">Facebook</li>
+                        <li class="underline">Linkedin</li>
+                    </ul>
+    
+                    <div class="w-full h-fit flex md:items-center items-start justify-between pr-[4vw]">
+                        <ul class="md:text-[1.2vw] text-[4vw] mt-[7vh] ">
+                            <li class="mb-[2vw] no-underline">L:</li>
+                            <li class="underline">202-1965 W 4th Ave</li>
+                            <li class="underline">Vancouver, Canada</li>
+                            <li class="underline mt-[2vw]">30 Chukarina St</li>
+                            <li class="underline">Linkedin</li>
+                        </ul>
+    
+                        <ul class="md:text-[1.2vw] text-[4vw] mt-[7vh] ">
+                            <li class="mb-[2vw] no-underline">M:</li>
+                            <li class="underline">Home</li>
+                            <li class="underline">Services</li>
+                            <li class="underline">Our work</li>
+                            <li class="underline">About us</li>
+                            <li class="underline">Insights</li>
+                            <li class="underline">Contact us</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="md:text-[1.2vw] text-[4vw] mt-[7vh] ">
+                            <li class="mb-[1.5vw] no-underline">E:</li>
+                            <li class="underline">hello@ochi.design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-fit flex md:flex-row flex-col md:items-center items-start justify-between mt-[3vw] md:gap-0 gap-[4vh]">
+                <svg  class="mt-[5vh] md:mt-0" width="72" height="30" viewBox="0 0 72 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.8393 10.2032C4.22951 10.3257 -0.0459221 14.7356 0.000372391 20.2752C0.0412204 25.3548 4.57808 30.3608 10.6862 29.9226C15.5145 29.5768 19.9015 25.4119 19.8525 20.0057C19.8035 14.5995 15.1904 10.0916 9.8393 10.2032ZM9.89649 25.7005C6.87101 25.7005 4.39834 23.1144 4.40924 19.9839C4.39525 19.2507 4.52792 18.522 4.79947 17.8407C5.07102 17.1594 5.47597 16.5392 5.99056 16.0164C6.50515 15.4937 7.11902 15.0789 7.79613 14.7966C8.47324 14.5142 9.19995 14.3698 9.93362 14.372C10.6673 14.3742 11.3931 14.5228 12.0686 14.8092C12.744 15.0956 13.3554 15.514 13.8668 16.0398C14.3783 16.5656 14.7796 17.1882 15.0471 17.8711C15.3146 18.554 15.4429 19.2834 15.4246 20.0166C15.4409 23.1008 12.9111 25.7059 9.88832 25.7005H9.89649Z" fill="currentColor"></path>
+                    <path d="M62.8086 29.4855H67.1222V10.6372H62.8086V29.4855Z" fill="currentColor"></path>
+                    <path d="M67.6816 0.172852V6.13439H71.5322C71.6738 6.13439 71.8046 6.13439 72.0006 6.11534V0.172852H67.6816Z" fill="currentColor"></path>
+                    <path d="M31.5648 25.7016C28.5393 25.7016 26.0667 23.1156 26.0776 19.9851C26.0936 18.5291 26.6764 17.1366 27.7023 16.1029C28.7282 15.0692 30.1166 14.4757 31.573 14.4482C32.4198 14.4541 33.2537 14.6557 34.0095 15.0373C34.7654 15.4188 35.4227 15.97 35.9301 16.6477L40.0667 15.0144C38.2884 12.0853 35.0669 10.1145 31.4995 10.1989C25.8897 10.3214 21.6142 14.7313 21.6605 20.2709C21.7014 25.3505 26.2382 30.3565 32.3464 29.9183C33.9908 29.7803 35.5761 29.2408 36.9631 28.347C38.3501 27.4532 39.4963 26.2326 40.3009 24.7924L36.2542 22.9931C35.7705 23.8086 35.0851 24.486 34.2638 24.9604C33.4426 25.4347 32.5132 25.69 31.5648 25.7016Z" fill="currentColor"></path>
+                    <path d="M52.4097 10.1387C51.2512 10.1119 50.1066 10.3947 49.0941 10.958C48.0816 11.5212 47.2379 12.3445 46.6501 13.3427V0.172852H42.293V29.4688H46.6501C46.6501 29.1721 46.6501 18.7816 46.6501 18.7816C46.6501 15.6946 47.8619 13.4352 50.8084 13.4352C54.6046 13.4352 54.6209 17.4178 54.6209 19.6962C54.6209 22.9165 54.6209 25.5189 54.6209 28.7393V29.4987H59.0271C59.0271 29.3708 59.0488 29.2728 59.0488 29.1721C59.0488 25.5108 59.0951 21.8522 59.0325 18.1909C58.9916 15.6538 58.5015 10.1387 52.4097 10.1387Z" fill="currentColor"></path>
+                </svg>
+
+                <p class="text-[#b2b2b2] md:mt-0 mt-[8vh]  ">©️ ochi design 2024. <u>Legal Terms</u></p>
+
+                <p class="text-[#b2b2b2]">Website by Pj<u></u></p>
+            </div>
+        </footer>
+        <!-- footer end -->
+       </div>
+    </div>
+    <!-- app end -->
+
+    
+
+    <!-- lenis cdn start-->
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+    <!-- lenis cdn end -->
+    <!-- locomotive js cdn start -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <!-- locomotive js cdn end -->
+
+    <!-- gsap start -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- gsap end -->
+
+   
+    <!-- gsap scrolltrigger cdn start-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- gsap scrolltrigger cdn end -->
+   
+    <!-- script start -->
+    <script src="main.js"></script>
+    <!-- script end -->
+</body>
+</html>
