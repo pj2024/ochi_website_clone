@@ -187,7 +187,6 @@ function eye_bg_vedio() {
 }
 
 init()
-clients()
 counter()
 eye();
 navBar();
