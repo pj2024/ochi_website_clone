@@ -1991,6 +1991,14 @@ video {
     background-color: transparent;
   }
 
+  .md\:bg-\[var\(--bg-white\)\] {
+    background-color: var(--bg-white);
+  }
+
+  .md\:bg-none {
+    background-image: none;
+  }
+
   .md\:object-cover {
     -o-object-fit: cover;
        object-fit: cover;

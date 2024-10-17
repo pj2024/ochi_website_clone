@@ -187,8 +187,8 @@ function eye_bg_vedio() {
 }
 
 init()
-// clients()
-// counter()
+clients()
+counter()
 eye();
 navBar();
 marquee();
